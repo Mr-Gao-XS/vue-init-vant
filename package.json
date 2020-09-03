@@ -5,11 +5,19 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test": "vue-cli-service build --mode test",
+    "pre": "vue-cli-service build --mode pre",
+    "prod": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "dayjs": "^1.8.35",
+    "qs": "^6.9.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.3",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -32,7 +40,13 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "indent": "off",
+      "quotes": "off",
+      "space-before-function-paren": "off",
+      "no-unused-vars": "off",
+      "no-console": "off"
+    }
   },
   "browserslist": [
     "> 1%",
