@@ -2,6 +2,7 @@
   <div class="home">
     home
     <div class="name">我的名字叫{{ name }}</div>
+    <van-button type="info">信息按钮</van-button>
   </div>
 </template>
 

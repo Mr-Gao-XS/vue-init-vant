@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import { get, post } from './api'
+import '@/libs/vant'
 
 Vue.config.productionTip = false
 
