@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    home
+    home页
     <div class="name">
       <span>我的名字叫{{ name }}</span>
     </div>
-    <van-button type="info">信息按钮</van-button>
+    <van-button type="info">这是一个vant按钮</van-button>
   </div>
 </template>
 
@@ -47,15 +47,20 @@ export default {
 
 <style lang="scss" scoped>
 .home {
+  text-align: center;
   .name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     height: 100px;
-    width: rem(600);
-    font-size: rem();
+    width: rem(600); // 页面总宽度 750
     margin: 0 auto;
     border: 1px solid skyblue;
   }
 }
+
+// 用户片段 scss.json 请添加  直接r即可提示
+//   "rem": {
+//     "prefix": "r",
+//     "body": ["rem($1)"],
+//     "description": "rem"
+//   }
 </style>
