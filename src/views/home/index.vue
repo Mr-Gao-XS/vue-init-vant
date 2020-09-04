@@ -53,6 +53,7 @@ export default {
     align-items: center;
     height: 100px;
     width: rem(600);
+    font-size: rem();
     margin: 0 auto;
     border: 1px solid skyblue;
   }
