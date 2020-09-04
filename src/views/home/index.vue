@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     home
-    <div>我的名字叫{{ name }}</div>
+    <div class="name">我的名字叫{{ name }}</div>
   </div>
 </template>
 
@@ -42,4 +42,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.home {
+  .name {
+  }
+}
+</style>
