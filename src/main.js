@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import { get, post } from './api'
 import '@/libs/vant'
+import '@/static/scss/reset.scss'
 
 Vue.config.productionTip = false
 

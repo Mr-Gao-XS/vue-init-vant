@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     home
-    <div class="name">我的名字叫{{ name }}</div>
+    <div class="name">
+      <span>我的名字叫{{ name }}</span>
+    </div>
     <van-button type="info">信息按钮</van-button>
   </div>
 </template>
@@ -46,6 +48,13 @@ export default {
 <style lang="scss" scoped>
 .home {
   .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: rem(600);
+    margin: 0 auto;
+    border: 1px solid skyblue;
   }
 }
 </style>

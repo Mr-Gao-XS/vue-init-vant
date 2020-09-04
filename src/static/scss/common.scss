@@ -1,0 +1,71 @@
+/*color*/
+$A1: #354052;
+$A2: #7f8fa4;
+$A3: #c5ccd4;
+$A4: #ebedf2;
+$A5: #ffffff;
+$A6: #252e3d;
+$A7: #dfe2e6;
+$A8: #f1f2f4;
+$B1: #2d8cf0;
+$B2: #44c14a;
+$B3: #ffbb44;
+$B4: #8a5bf6;
+$B5: #d25ee6;
+$B6: #d18b4c;
+$B7: #00c8dc;
+$B8: #4ad8ae;
+$B9: #eb4d44;
+
+@mixin padding-15 {
+  padding: 15px 15px 0;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ml($px) {
+  margin-left: $px + px;
+}
+
+@mixin mr($px) {
+  margin-right: $px + px;
+}
+
+@mixin mt($px) {
+  margin-top: $px + px;
+}
+
+@mixin mb($px) {
+  margin-bottom: $px + px;
+}
+@mixin m($t, $r, $b, $l) {
+  margin: $t + px $r + px $b + px $l + px;
+}
+
+@mixin pl($px) {
+  padding-left: $px + px;
+}
+
+@mixin pr($px) {
+  padding-right: $px + px;
+}
+
+@mixin pt($px) {
+  padding-top: $px + px;
+}
+
+@mixin pb($px) {
+  padding-bottom: $px + px;
+}
+
+@function rem($px) {
+  @return $px / 100 * 1rem;
+}
